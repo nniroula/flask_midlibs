@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %} Form 1 for user input {% endblock %}
+
+{% block content %} 
+   
+    <h1>Madlibs</h1>
+    <form action="/story">
+        <div>
+        <label for="input-value">Place</label>
+            <input id="input-value" type="text" placeholder="Enter a place" name="place">
+        </div>
+        <div>
+        <label for="input-value">Noun</label>
+            <input id="input-value" type="text" placeholder="noun" name="noun">
+        </div>
+
+        <label for="input-value">Verb</label>
+            <input id="input-value" type="text" placeholder="Enter a verb" name="verb">
+
+        <div>
+        <label for="input-value">Adjective</label>
+            <input id="input-value" type="text" placeholder="Enter a place" name="adjective">
+        </div>
+        <div>
+        <label for="input-value">Plural_Noun</label>
+            <input id="input-value" type="text" placeholder="Enter a plural noun" name="plural_noun">
+        </div>
+        <button>Submit</button>
+    </form>
+
+{% endblock %}
