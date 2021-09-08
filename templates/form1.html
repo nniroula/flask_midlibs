@@ -6,7 +6,15 @@
 
     <h1>Madlibs</h1>
     <form action="/story">
-        <div>
+        {% for prompt in prompting_words %} 
+        <p> {{prompt}}
+        <!-- put this prompt into user input value -->
+            <input name="{{prompt}}">
+        </p>
+
+        {% endfor %}
+        <!-- thesea are for individual forms, but we are given a story -->
+        <!-- <div>
         <label for="input-value">Place</label>
             <input id="input-value" type="text" placeholder="Enter a place" name="place">
         </div>
@@ -25,7 +33,7 @@
         <div>
         <label for="input-value">Plural_Noun</label>
             <input id="input-value" type="text" placeholder="Enter a plural noun" name="plural_noun">
-        </div>
+        </div> -->
         <button>Submit</button>
     </form>
 
