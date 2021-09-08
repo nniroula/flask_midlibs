@@ -4,11 +4,8 @@
 
 {% block content %}  
     <h1>Your Story</h1>
-    <!-- This is for a single html file, but we get input from a given python class -->
-    <!-- <p>Once upon a time in a long-ago {{place}}, there lived a large {{adjective}} {{noun}}. 
-        It loved to {{verb}} {{plural_noun}}.</p> -->
+    <!-- Not from a single html file, but we get input from a given python class -->
         <p> {{ generate_story }}</p>
-    
 {% endblock %}
 
 
